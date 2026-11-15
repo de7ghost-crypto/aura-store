@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — Aura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">AURA</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <main class="checkout-page">
+  <h1>Checkout</h1>
+  <p class="checkout-sub">Check your order and you are all set.</p>
+
+  <div id="empty-cart" class="empty-cart hidden">
+    <h2>Your cart is empty</h2>
+    <p>Add something you like and come back.</p>
+    <a href="shop.html" class="btn">Browse the collection</a>
+  </div>
+
+  <div id="checkout-layout" class="checkout-layout">
+    <div class="checkout-card">
+      <h2>Your details</h2>
+
+      <div id="guest-email-field" class="field">
+        <label for="guest-email">Email for your order confirmation</label>
+        <input type="email" id="guest-email" placeholder="you@example.com" autocomplete="email">
+        <p class="field-note">No account needed. <a href="customer-login.html">Log in</a> if you have one.</p>
+      </div>
+
+      <p id="account-note" class="account-note hidden"></p>
+      <p id="order-error" class="login-error hidden"></p>
+    </div>
+
+    <aside class="checkout-card">
+      <h2>Order summary</h2>
+      <div id="checkout-summary"></div>
+      <button id="place-order-btn" class="btn">Place order</button>
+    </aside>
+  </div>
+
+  <div id="order-success" class="order-success hidden">
+    <div class="success-mark">&#10003;</div>
+    <h2>Thank you, your order is in</h2>
+    <p id="success-text"></p>
+    <a href="shop.html" class="btn">Keep browsing</a>
+  </div>
+</main>
+
+  <script src="js/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — Aura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+       <a href="index.html" class="logo">AURA</a>
+      <a href="index.html" class="text-link back-link">Back to home</a>
+</nav>
+  </header>
+
+<main class="auth-page">
+  <aside class="auth-visual">
+    <div class="auth-visual-text">
+      <span class="eyebrow">Join Aura</span>
+      <h2>Made to be lived in.</h2>
+      <p>An account takes a minute and makes checkout quicker every time.</p>
+    </div>
+  </aside>
+
+  <section class="auth-panel">
+    <div class="auth-card">
+      <h1>Create your account</h1>
+      <p class="auth-sub">Just an email and a password to get started.</p>
+
+      <p id="register-error" class="login-error hidden"></p>
+
+      <form id="register-form">
+        <label for="email">Email</label>
+        <input type="email" id="email" autocomplete="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" autocomplete="new-password" required minlength="6">
+        <span class="field-hint">At least 6 characters</span>
+
+        <button type="submit" class="btn">Create account</button>
+      </form>
+
+      <p class="switch-auth">Already have an account? <a href="customer-login.html">Log in</a></p>
+    </div>
+  </section>
+</main>
+
+  <script src="js/register.js"></script>
+</body>
+</html>

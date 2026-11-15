@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Aura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">AURA <span class="admin-tag">Admin</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">View Store</a></li>
+      </ul>
+      <ul class="nav-links">
+  <li><a href="index.html">View Store</a></li>
+  <li><a href="#" id="logout-link">Logout</a></li>
+</ul>
+    </nav>
+  </header>
+
+  <main class="admin-main">
+    <h1>Manage Products</h1>
+
+    <button id="show-form-btn" class="btn">+ Add New Product</button>
+
+    <div id="product-form-container" class="hidden">
+      <h2 id="form-title">Add Product</h2>
+      <form id="product-form">
+        <input type="hidden" id="product-id">
+
+        <label>Name</label>
+        <input type="text" id="name" required>
+
+        <label>Price</label>
+        <input type="number" id="price" step="0.01" required>
+
+        <label>Image URL</label>
+        <input type="text" id="image" required>
+
+        <label>Description</label>
+        <textarea id="description" required></textarea>
+
+        <label>Category</label>
+        <select id="category" required>
+         <option value="">Select a category</option>
+         <option value="Men">Men</option>
+         <option value="Women">Women</option>
+         <option value="Accessories">Accessories</option>
+        </select>
+
+        <label>Sizes (comma-separated, e.g. S, M, L, XL)</label>
+        <input type="text" id="sizes" required>
+
+        <label>Colors (comma-separated, e.g. Black, White)</label>
+        <input type="text" id="colors" required>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Save Product</button>
+          <button type="button" id="cancel-form-btn" class="btn-secondary">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="admin-product-list" class="admin-product-list"></div>
+  </main>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

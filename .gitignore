@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Secrets (database password and JWT secret live here)
+.env
+.env.*
+!.env.example
+
+# Tool folders and system files
+.agents/
+.claude/
+.cursor/
+.devin/
+.DS_Store
+*.log

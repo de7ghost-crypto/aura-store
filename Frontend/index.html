@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura — Clothing Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <div class="announce">Free Delivery on orders over $100!</div>
+  <header>
+  <nav>
+    <div class="logo">AURA</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+    </ul>
+    <div class="nav-icons">
+      <span id="account-link"></span>  
+      <button class="cart-toggle">Cart (0)</button>
+      <div class="cart-dropdown">
+        <div class="cart-items"></div>
+        <div class="cart-total"></div>
+        <button class="clear-cart-btn">Clear Cart</button>
+        <a href="checkout.html" class="btn" style="display:block; text-align:center; margin-top:0.5rem; text-decoration:none;">Checkout</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="home">
+  <section class="hero">
+  <div class="hero-content">
+    <span class="eyebrow">New season is here</span>
+    <h1>Clothes that feel like you.</h1>
+    <p>Easy, well made pieces for everyday life, picked with care and priced fairly.</p>
+    <div class="hero-actions">
+      <a href="shop.html" class="btn">Browse the collection</a>
+      <a href="#new-arrivals" class="btn btn-ghost">See what's new</a>
+    </div>
+  </div>
+</section>
+
+<section class="perks">
+  <div class="perks-inner">
+    <div class="perk">
+      <h4>Free delivery</h4>
+      <p>On every order over $100</p>
+    </div>
+    <div class="perk">
+      <h4>Easy returns</h4>
+      <p>Changed your mind? 14 days, no fuss</p>
+    </div>
+    <div class="perk">
+      <h4>Secure checkout</h4>
+      <p>Your details stay private</p>
+    </div>
+    <div class="perk">
+      <h4>Made to last</h4>
+      <p>Fabrics we would wear ourselves</p>
+    </div>
+  </div>
+</section>
+<section class="category-section">
+  <div class="section-head">
+    <div>
+      <h2>Shop by category</h2>
+      <p>Start with what you wear most.</p>
+    </div>
+  </div>
+
+  <div class="categories">
+    <div class="category-tile">
+      <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=600&q=80" alt="Men">
+      <div class="category-label">Men</div>
+    </div>
+    <div class="category-tile">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&q=80" alt="Women">
+      <div class="category-label">Women</div>
+    </div>
+    <div class="category-tile">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80" alt="Accessories">
+      <div class="category-label">Accessories</div>
+    </div>
+  </div>
+</section>
+ <section class="products" id="new-arrivals">
+  <div class="section-head">
+    <div>
+      <h2>New arrivals</h2>
+      <p>Fresh in this week.</p>
+    </div>
+    <a href="shop.html" class="text-link">See everything</a>
+  </div>
+  <div class="product-grid" id="product-grid"></div>
+</section>
+</main>
+<section class="brand-story">
+  <div class="brand-story-inner">
+    <div class="brand-story-image">
+      <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=900&q=80" alt="Clothes hanging on a rail">
+    </div>
+    <div class="brand-story-content">
+      <span class="eyebrow">Our promise</span>
+      <h2>Made to be lived in</h2>
+      <p>We choose every piece the way we would choose it for ourselves: soft fabrics, honest stitching and shapes that still feel right years from now.</p>
+      <ul class="promise-list">
+        <li><div><strong>Fabrics that feel good</strong><span>Natural, breathable and kind to your skin.</span></div></li>
+        <li><div><strong>Fair prices, no tricks</strong><span>What you see is what you pay.</span></div></li>
+        <li><div><strong>A real person replies</strong><span>Questions about an order? We answer them ourselves.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</section>
+  <footer>
+  <div class="footer-content">
+    <div class="footer-col">
+      <div class="logo">AURA</div>
+      <p>Premium fashion for every season.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Shipping & Returns</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>Get updates on new arrivals and offers.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit" class="btn">Join</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Aura. All rights reserved.</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

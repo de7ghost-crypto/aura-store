@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product — Aura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">AURA</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+      <div class="nav-icons">
+        <span id="account-link"></span>
+        <button class="cart-toggle">Cart </button>
+        <div class="cart-dropdown">
+          <a href="checkout.html" class="btn" style="display:block; text-align:center; margin-top:0.5rem; text-decoration:none;">Checkout</a>
+          <div class="cart-items"></div>
+          <div class="cart-total"></div>
+          <button class="clear-cart-btn">Clear Cart</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main class="product-page">
+  <div class="breadcrumb" id="breadcrumb"></div>
+  <section class="product-layout" id="product-root"></section>
+  <section class="related" id="related"></section>
+</main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <div class="logo">AURA</div>
+        <p>Premium fashion for every season.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit" class="btn">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aura. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>

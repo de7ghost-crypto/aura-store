@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — Aura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">AURA</div>
+      <ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="shop.html">Shop</a></li>
+</ul>
+<div class="nav-icons">
+  <span id="account-link"></span>
+  <button class="cart-toggle">Cart (0)</button>
+  <div class="cart-dropdown">
+    <div class="cart-items"></div>
+    <div class="cart-total"></div>
+    <button class="clear-cart-btn">Clear Cart</button>
+    <a href="checkout.html" class="btn" style="display:block; text-align:center; margin-top:0.5rem; text-decoration:none;">Checkout</a>
+  </div>
+</div>
+    </nav>
+  </header>
+
+  <main class="shop-page">
+
+  <section class="shop-hero">
+    <span class="eyebrow">The collection</span>
+    <h1>Everything in one place</h1>
+    <p>Browse by category, sort by price, or search for something specific.</p>
+  </section>
+
+  <section class="products">
+    <div class="shop-toolbar">
+      <div class="search-box">
+        <input type="search" id="search-input" placeholder="Search for a piece...">
+      </div>
+
+      <div class="category-pills" id="category-pills">
+        <button class="pill active" data-category="All">All</button>
+        <button class="pill" data-category="Men">Men</button>
+        <button class="pill" data-category="Women">Women</button>
+        <button class="pill" data-category="Accessories">Accessories</button>
+      </div>
+
+      <select id="sort-select" class="sort-select">
+        <option value="newest">Newest first</option>
+        <option value="price-asc">Price: low to high</option>
+        <option value="price-desc">Price: high to low</option>
+        <option value="name">Name A to Z</option>
+      </select>
+    </div>
+
+    <p id="results-count" class="results-count"></p>
+    <div class="product-grid" id="product-grid"></div>
+  </section>
+
+</main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <div class="logo">AURA</div>
+        <p>Premium fashion for every season.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Get updates on new arrivals and offers.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit" class="btn">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aura. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Aura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+       <a href="index.html" class="logo">AURA</a>
+      <a href="index.html" class="text-link back-link">Back to home</a>
+</nav>
+  </header>
+
+<main class="auth-page">
+  <aside class="auth-visual">
+    <div class="auth-visual-text">
+      <span class="eyebrow">Aura studio</span>
+      <h2>Keep the shelves looking good.</h2>
+      <p>Sign in to add pieces, update prices and keep the store fresh.</p>
+    </div>
+  </aside>
+
+  <section class="auth-panel">
+    <div class="auth-card">
+      <span class="eyebrow">Admin</span>
+      <h1>Sign in</h1>
+      <p class="auth-sub">For store staff. Customers can log in from the shop.</p>
+
+      <p id="login-error" class="login-error hidden"></p>
+
+      <form id="login-form">
+        <label for="email">Email</label>
+        <input type="email" id="email" autocomplete="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" autocomplete="current-password" required>
+
+        <button type="submit" class="btn">Sign in</button>
+      </form>
+
+      <p class="switch-auth"><a href="customer-login.html">Customer login</a> &middot; <a href="index.html">Back to store</a></p>
+    </div>
+  </section>
+</main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
