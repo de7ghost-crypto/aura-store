@@ -8,7 +8,23 @@ const jwt = require('jsonwebtoken');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+// Only these websites may call the API from a browser
+const allowedOrigins = [
+  'https://aura-store-drab.vercel.app',
+  'http://127.0.0.1:5500',
+  'http://localhost:5500'
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    // Requests with no origin (Thunder Client, opening a link directly) are allowed
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(null, false);
+    }
+  }
+}));
 app.use(express.json());
 
 app.get('/', (req, res) => {
