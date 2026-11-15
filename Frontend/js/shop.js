@@ -111,7 +111,7 @@ async function loadProducts() {
   showSkeletons();
 
   try {
-    const response = await fetch('http://localhost:3000/api/products');
+    const response = await fetch(`${API_BASE}/api/products`);
     if (!response.ok) {
       throw new Error('Request failed');
     }

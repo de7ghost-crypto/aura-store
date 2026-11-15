@@ -1,6 +1,6 @@
 // Checkout page: show the order, collect an email if needed, place the order
 
-const API_URL = 'http://localhost:3000/api/orders';
+const API_URL = API_BASE + '/api/orders';
 
 const cart = JSON.parse(localStorage.getItem('cart')) || [];
 let token = localStorage.getItem('token');

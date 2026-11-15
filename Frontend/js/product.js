@@ -1,6 +1,6 @@
 // Product page: load one product, build the page, then show related pieces
 
-const API = 'http://localhost:3000/api/products';
+const API = API_BASE + '/api/products';
 const params = new URLSearchParams(window.location.search);
 const productId = parseInt(params.get('id'));
 

@@ -10,7 +10,7 @@ registerForm.addEventListener('submit', async (event) => {
   registerError.classList.add('hidden');
 
   try {
-    const response = await fetch('http://localhost:3000/api/auth/register', {
+    const response = await fetch(`${API_BASE}/api/auth/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password })
@@ -25,7 +25,7 @@ registerForm.addEventListener('submit', async (event) => {
     }
 
     // Auto-login right after successful registration
-    const loginResponse = await fetch('http://localhost:3000/api/auth/login', {
+    const loginResponse = await fetch(`${API_BASE}/api/auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password })

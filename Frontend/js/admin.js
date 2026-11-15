@@ -5,7 +5,7 @@ if (!token || !user || user.role !== 'admin') {
   window.location.href = 'login.html';
 }
 
-const API_URL = 'http://localhost:3000/api/products';
+const API_URL = API_BASE + '/api/products';
 
 const showFormBtn = document.getElementById('show-form-btn');
 const formContainer = document.getElementById('product-form-container');
